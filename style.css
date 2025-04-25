@@ -96,13 +96,84 @@ a {
   font-weight: 700;
 }
 
-.hero header nav {
+.hero header ul {
+  list-style: none;
   display: flex;
-  align-items: center;
-  gap: 30px;
+  gap: 10px;
   font-size: 18px;
-  color: #ffffffe3;
+  color: white;
   flex-wrap: wrap;
+}
+
+.hero header ul span {
+  height: 100%;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid transparent;
+  cursor: pointer;
+  padding: 0 10px;
+  font-weight: 600;
+  transition: .2s;
+}
+
+.hero header ul span:hover {
+  color: white;
+  border: 2px solid white;
+}
+
+#menu {
+  display: none;
+  margin-left: auto;
+  font-size: 26px;
+  color: var(--blue);
+  background-color: white;
+  padding: 8px;
+  border-radius: 2px;
+  transform: translate(0, 0);
+}
+
+@media (max-width: 991px) {
+  .hero header ul span {
+    height: 100%;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+    cursor: pointer;
+    padding: 14px 0;
+    font-weight: 600;
+    transition: .2s;
+    border-bottom: 1px solid #00000014;
+    color: black;
+  }
+  .hero header ul {
+    position: absolute;
+    left: 0;
+    top: 4rem;
+    flex-direction: column;
+    list-style: none;
+    display: flex;
+    font-size: 18px;
+    flex-wrap: wrap;
+    width: 100%;
+    color: rgb(11, 19, 65);
+    z-index: 2;
+    background-color: #f1f3f4;
+    gap: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: .5s;
+  }
+  .hero header ul li:first-of-type {
+    display: none;
+  }
+  #menu {
+    display: initial;
+
+  }
 }
 
 .hero header nav button {
@@ -127,7 +198,6 @@ a {
 main {
   padding-top: 10rem;
   position: relative;
-  z-index: 2;
 }
 
 @media (max-width: 1200px) {
@@ -209,6 +279,22 @@ main .right button:hover {
   display: flex;
   gap: 25px;
   margin-top: 7rem;
+}
+
+@media (max-width: 992px) {
+  .about {
+    height: initial;
+  }
+  .about .container {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .about .left {
+    order: 1;
+  }
+  .about .left p {
+    font-size: 15px;
+  }
 }
 
 .about .left {
