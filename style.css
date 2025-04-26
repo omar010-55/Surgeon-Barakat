@@ -234,8 +234,8 @@ main .left {
 }
 
 main .left img {
-  width: 100%;
   height: 42rem;
+  max-width: 100%;
   border-radius: 5px;
 }
 
@@ -375,4 +375,80 @@ main .right button:hover {
 .about .right img {
   width: 100%;
 }
+
 /* About Section End */
+
+/* Services Section Start */
+div#services {
+  padding: 5rem 0;
+  text-align: center;
+  background-color: #f1f3f4;
+}
+
+.services span {
+  font-weight: 800;
+  color: rgb(5, 87, 188);
+  display: block;
+}
+
+.services h2 {
+  font-size: 1.9em;
+  margin: 10px 0 40px;
+  color: rgb(11, 19, 65);
+}
+
+.services .cards {
+  display: flex;
+  gap: 22px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 991px) {
+  .services .cards {
+    flex-direction: column;
+  }
+}
+
+.services .cards .card {
+  padding: 26px;
+  background-color: white;
+  flex: 1;
+  text-align: end;
+}
+
+.services .card img {
+  width: 100%;
+  height: 11rem;
+}
+
+.services h4 {
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+.services .card p {
+  font-size: 17px;
+  text-align: end;
+}
+
+.services button {
+  background-color: var(--blue);
+  color: white;
+  width: 12rem;
+  height: 60px;
+  border: 2px solid white;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: color, background-color, border .5s;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+.services button:hover {
+  background-color: transparent;
+  color: var(--blue);
+  border: 2px solid var(--blue);
+}
+/* Services Section End */
