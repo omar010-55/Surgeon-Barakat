@@ -115,12 +115,17 @@ a {
   cursor: pointer;
   padding: 0 10px;
   font-weight: 600;
-  transition: .2s;
+  transition: color , border .2s;
 }
 
 .hero header ul span:hover {
   color: white;
   border: 2px solid white;
+}
+
+.hero header ul span:active {
+  background-color: white;
+  color: var(--blue);
 }
 
 #menu {
@@ -145,11 +150,12 @@ a {
     cursor: pointer;
     padding: 14px 0;
     font-weight: 600;
-    transition: .2s;
+    transition: color , background-color .2s;
     border-bottom: 1px solid #00000014;
     color: black;
   }
-  .hero header ul span:hover {
+  .hero header ul span:hover,
+  .hero header ul span:active  {
     color: var(--blue);
     background-color: azure;
   }
@@ -198,7 +204,7 @@ a {
   font-weight: 900;
   font-size: 16px;
   border-radius: 2px;
-  transition: .5s;
+  transition: color , background-color .5s;
 }
 
 .hero header nav button:hover {
@@ -254,7 +260,7 @@ main .right button {
   font-weight: 900;
   font-size: 16px;
   border-radius: 5px;
-  transition: .5s;
+  transition: color , background-color .5s;
 }
 
 main .right button:hover {
@@ -338,7 +344,7 @@ main .right button:hover {
 } 
 
 .about .left button {
-  background: var(--blue);
+  background-color: var(--blue);
   color: white;
   width: 12rem;
   height: 60px;
@@ -347,23 +353,15 @@ main .right button:hover {
   cursor: pointer;
   font-size: 20px;
   border-radius: 10px;
-  transition: .5s;
+  transition: color , background-color , border .5s;
   font-family: inherit;
   font-weight: bold;
 }
 
 .about .left button:hover {
-  background: transparent;
+  background-color: transparent;
   color: var(--blue);
-  width: 12rem;
-  height: 60px;
   border: 2px solid var(--blue);
-  outline: none;
-  font-weight: bold;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: 20px;
-  border-radius: 10px;
 }
 
 .about .right {
