@@ -451,4 +451,62 @@ div#services {
   color: var(--blue);
   border: 2px solid var(--blue);
 }
+
 /* Services Section End */
+
+/* Location Section Start */
+.location {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.location span {
+  font-weight: 800;
+  color: rgb(5, 87, 188);
+  display: block;
+}
+
+.location h2 {
+  font-size: 1.9em;
+  margin: 10px 0 40px;
+  color: rgb(11, 19, 65);
+}
+
+.location .box {
+  display: flex;
+  background-color: #f2f6fb;
+}
+
+@media (max-width: 991px) {
+  .location .box {
+    flex-direction: column;
+  }
+}
+
+.location .left {
+  flex: 1;
+  flex-basis: 40%;
+  flex-grow: 0;
+}
+
+.location .left img {
+  max-width: 100%;
+}
+
+.location .right {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  padding: 21px;
+}
+
+.location .line {
+  display: flex;
+  justify-content: end;
+  font-size: 2rem;
+  align-items: baseline;
+  gap: 6px;
+}
+/* Location Section End */
