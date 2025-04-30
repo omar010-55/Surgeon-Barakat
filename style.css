@@ -510,3 +510,23 @@ div#services {
   gap: 6px;
 }
 /* Location Section End */
+
+/* Footer Start */
+footer p {
+  display: flex;
+  background-color: var(--blue);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  height: 6rem;
+  font-size: 18px;
+}
+
+footer p * {
+  margin: 0 3px;
+}
+
+footer p a {
+  text-decoration: underline;
+}
+/* Footer End */
